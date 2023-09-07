@@ -128,10 +128,15 @@
     "yocto-queue": "^1.0.0"
   },
   "scripts": {
-    "test": "jest",
-	"lint": "eslint"
+    "test": "jest --coverage",
+    "lint": "eslint"
   },
-  
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  },
   "author": "",
   "license": "ISC"
 }
